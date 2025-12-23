@@ -1,73 +1,78 @@
-body{
+body {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background:#222;
+    background: #222;
     box-sizing: border-box;
 }
 
-.class-banner {
-    background-color: white;
-    width: 200px;
+.banner{
+    background-color: #fff;
+    width: 300px;
     height: 150px;
-    border-radius:10px;
+    border-radius: 10px;
     position: relative;
-    text-align:center;
+    text-align: center;
 }
-.pin {
+.pin{
     position:absolute;
     top: -150px;
-    left:45px;
-    color:#fff;
+    left: 45%;
+    color:#fff ;
 }
 .lines{
-    position:relative;
-    top:150px;
-    background-color:#ACC;
+    position: relative;
+    top: 150px;
+    background-color: #ccc;
 }
-.lines::before {
-    content: '';
-    display:block;
-width:158px;
-height:2px;
-left:7%;
-background: #ddd;
-position: absolute;
-top:-220px;
-transform:rotate(120deg);
+.lines::before{
+    content:'';
+    display: block;
+    width: 158px;
+    height: 2px;
+    left: 7%;
+    background-color: #ddd;
+    position: absolute;
+    top: -220px;
+    transform: rotate(119deg);
 }
-
-.lines::after {
-    content: '';
-    display:block;
-width:158px;
-height:2px;
-right:13%;
-background: #ddd;
-position: absolute;
-top:-220px;
-transform:rotate(240deg);
+.lines::after{
+  content:'';
+    display: block;
+    width: 158px;
+    height: 2px;
+    right: 13%;
+    background-color: #ddd;
+    position: absolute;
+    top: -220px;
+    transform: rotate(240deg);
 }
-.banner:Hover {
-transform:rotate(-10deg);
+.banner:hover{
+    transform: rotate(-8deg);
 }
 .banner img{
     width:80px;
-    position:absolute;
-    right:-35px;
-    top:-50px;
+    position: absolute;
+    right:-40px;
+    top: -50px;
     transform:rotate(30deg);
 }
-h1 {
-  font-family: "Great Vibes", cursive;
-  font-weight: 400;
-  font-style: normal;
-}
+
 .closed h1{
     background-color: #ccc;
     width: 300px;
     padding:5px 0;
     margin-bottom: 18px;
     font-family: 'Times New Roman', Times, serif;
+}
+.closed p, .closed h2{
+    background-color: #fff;
+    width: 300px;
+    font-size: 25px;
+    line-height: .02;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.closed p{
+   font-size: 15px;
 }
